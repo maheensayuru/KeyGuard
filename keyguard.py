@@ -18,7 +18,7 @@ SECRET_PATTERNS = {
     "Generic API Key / Password": r"(?i)(api_key|secret|password|pwd|token)[a-z0-9_ .\-,]{0,25}[:=]{1,2}\s*['\"]([a-zA-Z0-9\-_=]{16,64})['\"]"
 }
 
-IGNORE_DIRS = {".git", "__pycache__", "node_modules", "venv", "env"}
+IGNORE_DIRS = {".git", "__pycache__", "node_modules", "venv", "env", "build", "dist"}
 
 def scan_file(filepath):
     found_secrets = []
